@@ -1,36 +1,50 @@
-# Mood Music <img src="https://github.com/arnavbansal25/mood-music/blob/main/logo.png" width=50>
-Mood-Music is a React based web application with capabilities to analyze and detect emotion from live webcam feed in real time. The application takes emotion and weather captured at user’s location and concatenate them into a string. That combined string is then passed into an API to discover the relevant songs which the user might like. The site provides users a friendly interface with engaging visuals and easy navigation.
+# Mood Outfit Recommender 👗✨
 
-## Live Demo Link
-Hosted on [Netlify](https://mood-music-ab.netlify.app/)
+Mood Outfit Recommender is a React based web application with capabilities to analyze and detect emotion from live webcam feed in real time. The application captures your current mood through facial expression analysis and provides personalized outfit recommendations based on your emotional state. The site provides users a friendly interface with engaging visuals and easy navigation.
 
 ## Features
-| Emotion Detection | Webcam Capture | Weather Detection | Friendly User Interface | Completely Client Side | Responsive Design |
-|       :---:       |      :---:     |       :---:       |          :---:          |         :---:          |       :---:       |
-| <img src="https://github.com/arnavbansal25/mood-music/blob/main/screenshots/f_emotion_detection.png" width=100> | <img src="https://github.com/arnavbansal25/mood-music/blob/main/screenshots/f_webcam_capture.png" width=100> | <img src="https://github.com/arnavbansal25/mood-music/blob/main/screenshots/f_weather_detection.png" width=100> | <img src="https://github.com/arnavbansal25/mood-music/blob/main/screenshots/f_friendly_ui.png" width=100> | <img src="https://github.com/arnavbansal25/mood-music/blob/main/screenshots/f_client_side.png" width=100> | <img src="https://github.com/arnavbansal25/mood-music/blob/main/screenshots/f_responsive_design.png" width=100> |
 
-## Screenshots
-| Application Interface |
-|          :---:        |
-| <img src="https://github.com/arnavbansal25/mood-music/blob/main/screenshots/interface1.png" width=1000> |
+| Emotion Detection | Webcam Capture | Outfit Recommendations | Friendly User Interface | Completely Client Side | Responsive Design |
+| ----------------- | -------------- | ---------------------- | ----------------------- | ---------------------- | ----------------- |
+| Real-time emotion detection using Face API | Live webcam feed with permission handling | Personalized outfit suggestions based on mood | Modern, intuitive UI with Material-UI | All processing done client-side | Mobile and desktop responsive |
 
-| Workflow |
-|   :---:  |
-| <img src="https://github.com/arnavbansal25/mood-music/blob/main/screenshots/workflow.png"> |
+## How It Works
 
-| One Webcam Frame | Face Key Points |
-|      :---:       |      :---:      |
-| <img src="https://github.com/arnavbansal25/mood-music/blob/main/screenshots/webcam_frame.jpg"> | <img src="https://github.com/arnavbansal25/mood-music/blob/main/screenshots/face_key_points.png"> |
+1. **Click "Your Current Mood"** in the navbar
+2. **Allow camera permission** when prompted
+3. **Let the app analyze your facial expression** for a few seconds
+4. **Get personalized outfit recommendations** based on your detected mood
+5. **View outfit details** including descriptions and prices
+
+## Mood-Based Recommendations
+
+- **Happy** 😀: Bright, colorful outfits to enhance your radiant mood
+- **Sad** 😔: Comfortable, uplifting pieces to boost your spirits
+- **Angry** 😠: Powerful, structured outfits to help you feel centered
+- **Surprised** 😲: Bold, adventurous pieces for your spontaneous spirit
+- **Fearful** 😨: Comfortable, reassuring outfits for security
+- **Disgusted** 🤢: Fresh, clean pieces for a renewed feeling
+- **Neutral** 😶: Versatile, elegant outfits for any occasion
 
 ## Technologies Used
+
 - [React](https://reactjs.org/)
 - [JavaScript](https://www.javascript.com/)
+- [Face-API.js](https://justadudewhohacks.github.io/face-api.js/docs/index.html) for emotion detection
+- [Material-UI](https://mui.com/) for modern interface
+- [React Loader Spinner](https://www.npmjs.com/package/react-loader-spinner) for loading states
 
-## API Used
-* Emotion Detection [Face API](https://justadudewhohacks.github.io/face-api.js/docs/index.html)
-* Weather Detection [Weather API](https://www.weatherapi.com/)
-* Song Recommendation [Shazam API](https://rapidapi.com/apidojo/api/shazam)
+## Getting Started
 
-&nbsp;
-\
-<a href="https://www.flaticon.com/free-icons/export" title="export icons">Export icons created by Freepik - Flaticon</a>
+1. Clone the repository
+2. Install dependencies: `npm install`
+3. Start the development server: `npm start`
+4. Open [http://localhost:3000](http://localhost:3000) to view it in the browser
+
+## About
+
+A React-based web application that recommends outfits based on emotion detected from live webcam feed. Perfect for those who want to dress according to their mood or need a little help choosing what to wear based on how they're feeling.
+
+### Topics
+
+react outfit-recommendation emotion-detection fashion mood-based-styling
