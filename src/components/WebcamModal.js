@@ -100,7 +100,7 @@ function WebcamModal(props) {
                 canvasRef && canvasRef.current && faceapi.draw.drawFaceLandmarks(canvasRef.current, resizedDetections);
                 canvasRef && canvasRef.current && faceapi.draw.drawFaceExpressions(canvasRef.current, resizedDetections);
 
-                detections && detections.map((item) => {
+                detections && detections.forEach((item) => {
                     angry += item.expressions.angry/2;
                     disgusted += item.expressions.disgusted/2;
                     fearful += item.expressions.fearful/2;
